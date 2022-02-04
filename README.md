@@ -8,6 +8,21 @@ training set: 60,000 samples
 
 test set: 10,000 samples
 
+labels:
+
+| Label | Description |
+|-------|-------------|
+|   0   | T-shirt/top |
+|   1   |   Trouser   |
+|   2   |   Pullover  |
+|   3   |    Dress    |
+|   4   |     Coat    |
+|   5   |    Sandal   |
+|   6   |    Shirt    |
+|   7   |   Sneaker   |
+|   8   |     Bag     |
+|   9   |  Ankle boot |
+
 loading data:
 
 ```python
@@ -44,8 +59,13 @@ img.shape,img.view(img.shape[0],-1).shape
 
 #(torch.Size([64, 1, 28, 28]), torch.Size([64, 784]))
 
+#show first image
 plt.imshow(img[0][0],cmap='gray')
+
+#show first label
+label[0] #tensor(5)
 ```
+
 
 
 ### create git repo
