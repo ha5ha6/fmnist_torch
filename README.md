@@ -21,3 +21,11 @@ in local folder
     git branch -M main (change branch from master to main)    
 
     git push -u origin main
+
+after made some change:
+
+    git add .
+
+    git commit -m 'some change'
+
+    git push -u origin main
