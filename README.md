@@ -70,7 +70,7 @@ label[0] #tensor(5)
 
 ### create git repo
 
-git new repo, copy HTTPS address
+on github: new repo, copy HTTPS address
 
 in local folder:
 
