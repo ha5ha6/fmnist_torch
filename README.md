@@ -82,9 +82,9 @@ in local folder:
 
     git remote add origin https://github.com/ha5ha6/fmnist_torch.git
 
-    git pull origin main --allow-unrelated-histories (cuz remote has README.md)
-
     git branch -M main (change branch from master to main)    
+
+    git pull origin main --allow-unrelated-histories (cuz remote has README.md)
 
     git push -u origin main
 
