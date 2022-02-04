@@ -4,7 +4,7 @@
 
 https://github.com/zalandoresearch/fashion-mnist
 
-training set: 60,000 samples
+training set: 60,000 samples [1,28,28]
 
 test set: 10,000 samples
 
@@ -45,6 +45,8 @@ len(train) #60,000
 
 type(train[0]) #tuple
 
+len(train[0]) #2
+
 train[0][0] #shape: torch.Size([1, 28, 28])
 
 train[0][1] #label int
@@ -65,8 +67,6 @@ plt.imshow(img[0][0],cmap='gray')
 #show first label
 label[0] #tensor(5)
 ```
-
-
 
 ### create git repo
 
