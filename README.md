@@ -10,7 +10,7 @@ test set: 10,000 samples
 
 loading data:
 
-```
+```python
 mean,std=(0.5,),(0.5,)
 
 tf=transforms.Compose([transforms.ToTensor(),
@@ -22,6 +22,31 @@ test=datasets.FashionMNIST('~/.pytorch/FMNIST',download=True,train=False,transfo
 train_loader=torch.utils.data.DataLoader(train,batch_size=64,shuffle=True)
 test_loader=torch.utils.data.DataLoader(test,batch_size=64,shuffle=False)
 ```
+
+to read each sample from **train**
+
+```python
+len(train) #60,000
+
+type(train[0]) #tuple
+
+train[0][0] #shape: torch.Size([1, 28, 28])
+
+train[0][1] #label int
+```
+
+to read each sample from **train_loader**
+
+```python
+img,label=next(iter(train_loader))
+
+img.shape,img.view(img.shape[0],-1).shape
+
+#(torch.Size([64, 1, 28, 28]), torch.Size([64, 784]))
+
+plt.imshow(img[0][0],cmap='gray')
+```
+
 
 ### create git repo
 
